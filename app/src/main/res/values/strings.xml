@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Experiencia de Usuario</string>
+    <string name="app_logo">"@drawable/notFoundImage"</string>
+
+</resources>

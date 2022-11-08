@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_fondo"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/edit_user"
+                android:hint="Nombre de usuario"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/rounded_corners"
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:id="@+id/edit_pass"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_corners"
+                android:textColorHint="@color/grey"
+                android:layout_marginTop="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/boton_entrar"
+                android:layout_margin="20dp"
+                android:id="@+id/btn_login"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrate"
+                android:textColor="@color/red_app"
+                android:id="@+id/txt_registro"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O accede por"
+                android:textColor="@color/black"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:paddingEnd="50dp"
+                android:layout_height="3px"
+                android:layout_margin="20dp"
+                android:background="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/red_social"
+                android:id="@+id/redes"/>
+                
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
